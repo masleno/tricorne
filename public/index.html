@@ -1,0 +1,23 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат втроем</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro-animation">Добро пожаловать!</div>
+    <div id="waiting-animation" class="hidden">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div id="chat" class="hidden">
+        <div id="messages"></div>
+        <input id="message-input" type="text" placeholder="Напиши сообщение...">
+        <button id="send-btn">Отправить</button>
+        <div id="status">Подключено: 1/3</div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
